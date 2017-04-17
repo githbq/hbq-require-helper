@@ -41,7 +41,7 @@ module.exports = {
             }
         }, filterCb || this.nameRule);
         return resultData;
-    } 
+    }, 
     //返回路径文件结果的对象   {[name]:result}]
     requireDirKV(paths, cb) {
         let resultData = {};
