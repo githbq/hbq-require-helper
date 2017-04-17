@@ -41,21 +41,7 @@ module.exports = {
             }
         }, filterCb || this.nameRule);
         return resultData;
-    },
-    /**
-     * this.requireDir的改装 返回一个{[name]:[result],[name]:[result]} 键值对象
-     * @param {*} paths 
-     * @param {*} cb 
-     * @param {*} filterCb 
-     */
-    requireDirKV() {
-        const results = this.requireDir.apply(this, arguments);
-        const resultKV = {};
-        for (let item of results) {
-            resultKV[item.name] = item.result;
-        }
-        return resultData;
-    },
+    } 
     //返回路径文件结果的对象   {[name]:result}]
     requireDirKV(paths, cb) {
         let resultData = {};
