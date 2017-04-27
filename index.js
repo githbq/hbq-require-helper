@@ -5,8 +5,8 @@ const ioHelper = require('iohelper');
 module.exports = {
     //普通require 支持数组的参数
     require(paths) {
-        paths = _.isArray(paths) ? paths : [paths];
-        let pathValue = pathTool.resolve.apply(null, paths);
+        paths =[].concat(paths);
+        let pathValue = pathTool.join.apply(null, paths);
         return require(pathValue);
     },
     //按规则过滤路径require
