@@ -1,7 +1,7 @@
 //自动加载对应目录的文件内容
 const requireDir = require('require-dir'); //require-dir 会过滤掉自身 所以不用担心会引发递归调用问题 比如 requireDir('./')
 const pathTool = require('path');
-const ioHelper = require('iohelper');
+const ioHelper = require('io-helper');
 module.exports = {
     //普通require 支持数组的参数
     require(paths) {
