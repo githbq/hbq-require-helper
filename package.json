@@ -22,7 +22,7 @@
     },
     "homepage": "git@github.com:githbq/hbq-require-helper.git#readme",
     "dependencies": {
-        "iohelper": "^0.0.4",
+        "io-helper": "^0.0.5",
         "require-dir": "^0.3.1"
     }
 }

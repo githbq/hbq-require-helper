@@ -3,8 +3,8 @@
 
 
 ajv@^4.9.1:
-  version "4.11.6"
-  resolved "https://registry.npmjs.org/ajv/-/ajv-4.11.6.tgz#947e93049790942b2a2d60a8289b28924d39f987"
+  version "4.11.7"
+  resolved "https://registry.npmjs.org/ajv/-/ajv-4.11.7.tgz#8655a5d86d0824985cc471a1d913fb6729a0ec48"
   dependencies:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
@@ -43,7 +43,7 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bluebird@^3.5.0:
+bluebird@^3.3.1, bluebird@^3.5.0:
   version "3.5.0"
   resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
 
@@ -166,8 +166,8 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 getpass@^0.1.1:
-  version "0.1.6"
-  resolved "https://registry.npmjs.org/getpass/-/getpass-0.1.6.tgz#283ffd9fc1256840875311c1b60e8c40187110e6"
+  version "0.1.7"
+  resolved "https://registry.npmjs.org/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
   dependencies:
     assert-plus "^1.0.0"
 
@@ -229,18 +229,20 @@ inherits@2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
-iohelper@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/iohelper/-/iohelper-0.0.4.tgz#dc07bc53064216614dce9b1502495a4905d4816b"
+io-helper@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/io-helper/-/io-helper-0.0.5.tgz#b2932a0050be89bd1523dcc965aa81f121e78117"
   dependencies:
     bluebird "^3.5.0"
     file-system "^2.2.2"
     fs-extra-promise "^1.0.1"
     json-stringify-pretty-compact "^1.0.3"
+    lodash "^4.17.4"
     mkdirp "^0.5.1"
     mkdirp-promise "^5.0.1"
     node-dir "^0.1.16"
     promise-path "^1.2.3"
+    readline-promise "^0.0.1"
 
 is-typedarray@~1.0.0:
   version "1.0.0"
@@ -302,6 +304,10 @@ klaw@^1.0.0:
   resolved "https://registry.npmjs.org/klaw/-/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
   optionalDependencies:
     graceful-fs "^4.1.9"
+
+lodash@^4.17.4:
+  version "4.17.4"
+  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 mime-db@~1.27.0:
   version "1.27.0"
@@ -375,6 +381,12 @@ punycode@^1.4.1:
 qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.npmjs.org/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
+
+readline-promise@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/readline-promise/-/readline-promise-0.0.1.tgz#e1a1b717d7fcadf8d3ea4583c6af86756af4d638"
+  dependencies:
+    bluebird "^3.3.1"
 
 request@^2.72.0:
   version "2.81.0"
