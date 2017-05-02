@@ -5,9 +5,16 @@ const ioHelper = require('io-helper');
 module.exports = {
     //普通require 支持数组的参数
     require(paths) {
-        paths =[].concat(paths);
+        paths = [].concat(paths);
         let pathValue = pathTool.join.apply(null, paths);
         return require(pathValue);
+    },
+    /**
+     * 从根节点引用模板
+     * @param {*路径　相对于程序运行的根节点} paths 
+     */
+    requireRoot(paths) {
+        return this.require.apply(null, [process.cwd()].concat(paths));
     },
     //按规则过滤路径require
     requireRuled(paths, cb, filterCb) {
@@ -41,7 +48,7 @@ module.exports = {
             }
         }, filterCb || this.nameRule);
         return resultData;
-    }, 
+    },
     //返回路径文件结果的对象   {[name]:result}]
     requireDirKV(paths, cb) {
         let resultData = {};
