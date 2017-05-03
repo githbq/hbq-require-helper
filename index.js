@@ -7,7 +7,11 @@ module.exports = {
     require(paths) {
         paths = [].concat(paths);
         let pathValue = pathTool.join.apply(null, paths);
-        return require(pathValue);
+        const result = require(pathValue);
+        if (result) {
+            return result.default ? result.default : result
+        }
+        return result
     },
     /**
      * 从根节点引用模板
@@ -75,7 +79,7 @@ module.exports = {
             let name = pathTool.basename(n.relative, extName);
             let fullname = ioHelper.replaceSep(pathTool.join(dirname, name)); //  相对路径  aaa/xxx/yyy.js=>  aaa/xxx/yyy 
             if ((filterCb && filterCb(name, dirname, n)) || (!filterCb && this.nameRule(name))) {
-                let result = require(n.filePath);
+                let result = this.require(n.filePath);
                 cb && cb(fullname, result, n);
                 dirData.arr.push({ result, filePath: n.filePath, fullname, name, dirInfo: n });
                 dirData.kv[fullname] = result;
