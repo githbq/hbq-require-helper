@@ -18,7 +18,7 @@ module.exports = {
      * @param {*路径　相对于程序运行的根节点} paths 
      */
     requireRoot(paths) {
-        return this.require.apply(null, [process.cwd()].concat(paths));
+        return this.require.call(null, [process.cwd()].concat(paths));
     },
     //按规则过滤路径require
     requireRuled(paths, cb, filterCb) {
