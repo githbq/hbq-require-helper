@@ -28,7 +28,7 @@ module.exports = {
         //路径过滤
         _.each(dirData, (result, name) => {
             if ((filterCb && filterCb(name)) || (!filterCb && this.nameRule(name))) { //非入口JS 并且文件名非下划线开头
-                cb && cb(result, name);
+                cb && cb(result && result.default ? result.default : result, name);
             }
         });
     },
