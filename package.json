@@ -1,6 +1,6 @@
 {
     "name": "require-helper",
-    "version": "0.0.9",
+    "version": "0.0.11",
     "description": "引用包辅助工具",
     "main": "index.js",
     "scripts": {
@@ -23,6 +23,7 @@
     "homepage": "git@github.com:githbq/hbq-require-helper.git#readme",
     "dependencies": {
         "io-helper": "^0.0.5",
+        "lodash": "^4.17.4",
         "require-dir": "^0.3.1"
     }
 }
