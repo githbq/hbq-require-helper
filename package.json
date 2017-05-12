@@ -1,6 +1,6 @@
 {
     "name": "require-helper",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "引用包辅助工具",
     "main": "index.js",
     "scripts": {
