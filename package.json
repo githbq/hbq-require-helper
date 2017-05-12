@@ -1,6 +1,6 @@
 {
     "name": "require-helper",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "引用包辅助工具",
     "main": "index.js",
     "scripts": {
@@ -10,11 +10,7 @@
         "type": "git",
         "url": "git@github.com:githbq/hbq-require-helper.git"
     },
-    "keywords": [
-        "io",
-        "helper",
-        "es6"
-    ],
+    "keywords": ["io", "helper", "es6"],
     "author": "hubiqing",
     "license": "MIT",
     "bugs": {
@@ -22,7 +18,7 @@
     },
     "homepage": "git@github.com:githbq/hbq-require-helper.git#readme",
     "dependencies": {
-        "io-helper": "^0.0.5",
+        "io-helper": "^1.0.3",
         "lodash": "^4.17.4",
         "require-dir": "^0.3.1"
     }
