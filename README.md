@@ -1,3 +1,5 @@
-# 引用包辅助工具
-## 方便引用库 可以按目录引用
-![my love](./logo.png)
+# Reference package helper
+
+Wrapper arround 'require-dir'
+
+## Convenient reference library can be referenced by directory
