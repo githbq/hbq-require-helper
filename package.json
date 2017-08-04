@@ -1,6 +1,6 @@
 {
     "name": "require-helper",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "description": "引用包辅助工具",
     "main": "index.js",
     "scripts": {
@@ -12,8 +12,7 @@
     },
     "keywords": ["io", "helper", "es6"],
     "author": "hubiqing",
-    "license": "MIT", 
-     
+    "license": "MIT",
     "dependencies": {
         "io-helper": "^1.0.8",
         "lodash": "^4.17.4",
