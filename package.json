@@ -8,15 +8,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:githbq/hbq-require-helper.git"
+        "url": "https:/@github.com/githbq/hbq-require-helper.git"
     },
     "keywords": ["io", "helper", "es6"],
     "author": "hubiqing",
-    "license": "MIT",
-    "bugs": {
-        "url": "git@github.com:githbq/hbq-require-helper.git"
-    },
-    "homepage": "git@github.com:githbq/hbq-require-helper.git#readme",
+    "license": "MIT", 
+     
     "dependencies": {
         "io-helper": "^1.0.8",
         "lodash": "^4.17.4",
